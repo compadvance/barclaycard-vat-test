@@ -10,15 +10,15 @@ $sha_in_passphrase = 'sha in passphrae';
 
 // this works
 
-#$total_amount = 1000;   $item_price = 10.00;    $item_vat = 0.00;
+#$total_amount = 1000;   $item_price = "10.00";    $item_vat = "0.00";
 
 // this works
 
-#$total_amount = 1000;   $item_price = 8.00;    $item_vat = 2.00;
+#$total_amount = 1000;   $item_price = "8.00";    $item_vat = "2.00";
 
 // this works
 
-#$total_amount = 26999;   $item_price = 269.99;    $item_vat = 0.00;
+#$total_amount = 26999;   $item_price = "269.99";    $item_vat = "0.00";
 
 
 // this won't work, floating point problem occurs
@@ -28,11 +28,11 @@ $sha_in_passphrase = 'sha in passphrae';
 // Customer gets message
 // "Total amount is different to the sum of the details 270/269.99"
 
-$total_amount = 26999;   $item_price = 225.00;    $item_vat = 44.99;
+$total_amount = 26999;   $item_price = "225.00";    $item_vat = "44.99";
 
 // this works but it should not.
 
-#$total_amount = 26999;   $item_price = 225.01;    $item_vat = 44.99;
+#$total_amount = 26999;   $item_price = "225.01";    $item_vat = "44.99";
 
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
